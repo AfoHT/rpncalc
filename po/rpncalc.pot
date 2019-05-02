@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-04-26 23:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: cmds.c:140
+#, c-format
+msgid "defined only for arguments >= 0.\n"
+msgstr ""
+
+#: cmds.c:356
+#, c-format
+msgid "`%s' is a function"
+msgstr ""
+
+#: cmds.c:358
+#, c-format
+msgid "`%s' is a command"
+msgstr ""
+
+#: cmds.c:363
+#, c-format
+msgid " and takes 1 argument"
+msgstr ""
+
+#: cmds.c:365
+#, c-format
+msgid " and takes %d arguments"
+msgstr ""
+
+#: cmds.c:371
+#, c-format
+msgid ""
+"The following operations and constants are recognized:\n"
+"\n"
+msgstr ""
+
+#: cmds.c:381
+#, c-format
+msgid "Delimiters are ',', ';', space, tab, and newline.\n"
+msgstr ""
+
+#: gram.y:141
+msgid "undefined variable"
+msgstr ""
+
+#: gram.y:155
+msgid "is a constant"
+msgstr ""
+
+#: gram.y:164
+msgid "variable table is full"
+msgstr ""
+
+#: rpncalc.c:102
+#, c-format
+msgid "usage: %s [-h][-v] [\"expression\"]\n"
+msgstr ""
+
+#: rpncalc.c:105
+msgid "display this help and exit"
+msgstr ""
+
+#: rpncalc.c:106
+msgid "output version information and exit"
+msgstr ""
+
+#: rpncalc.c:107 rpncalc.c:108
+msgid "show license information and exit"
+msgstr ""
+
+#: rpncalc.c:163
+#, c-format
+msgid "%s version %s\n"
+msgstr ""
+
+#: rpncalc.c:203
+#, c-format
+msgid "This is free software with ABSOLUTELY NO WARRANTY.\n"
+msgstr ""
+
+#: rpncalc.c:205
+#, c-format
+msgid "For details, type `warranty'.\n"
+msgstr ""
+
+#: rpncalc.c:206
+#, c-format
+msgid "Type `quit' to quit and `?' to get a summary.\n"
+msgstr ""
+
+#: scan.l:209
+msgid "invalid hexadecimal constant"
+msgstr ""
+
+#: scan.l:219
+msgid "invalid binary constant"
+msgstr ""
+
+#: scan.l:229
+msgid "invalid octal constant"
+msgstr ""
+
+#: scan.l:236
+msgid "invalid integer constant"
+msgstr ""
+
+#: scan.l:260
+msgid "undefined function or command"
+msgstr ""
+
+#: scan.l:302
+#, c-format
+msgid "%s:%s:%d: %s at '%s'\n"
+msgstr ""
+
+#: stack.c:108
+#, c-format
+msgid "pop: stack empty.\n"
+msgstr ""
+
+#: stack.c:126
+#, c-format
+msgid "pick: element not available.\n"
+msgstr ""
+
+#: stack.c:144
+#, c-format
+msgid "drop: stack empty.\n"
+msgstr ""
+
+#: utils.c:57 utils.c:68
+msgid "Out of memory!"
+msgstr ""

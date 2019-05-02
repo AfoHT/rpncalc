@@ -1,0 +1,12 @@
+# Generated man-files
+rpncalc.1
+rpncalc.de.1
+rpncalc.en.1
+rpncalc.es.1
+
+# Regenerated
+y.tab.h
+
+# Editor specifics
+*.swp
+tags

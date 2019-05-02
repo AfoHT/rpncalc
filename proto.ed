@@ -1,0 +1,12 @@
+/%CMDS%/
+.r !./rpncalc help
+/The following operations and/
+.,.+1d
+/Delimiters are/
+.-1,.d
+/%CMDS%/d
+/\.TS/+3,/\.TE/s/^  *//
+/\.TS/+3,/\.TE/s/  *$//
+/\.TS/+3,/\.TE/s/  */ @ /g
+w
+q

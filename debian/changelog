@@ -1,0 +1,385 @@
+rpncalc (1.36.8) unstable; urgency=low
+
+  * Upload with correct e-Mail address. 
+
+ -- David Frey <dfrey@debian.org>  Sun, 03 May 2009 23:29:02 +0200
+
+rpncalc (1.36.7) unstable; urgency=low
+
+  * update to standard version 3.8.1.0
+  * change permissions of debian/substvars
+  * regenerate .gmo files
+  * Add version to GPL license
+  * orphaned package
+
+ -- David Frey <david@eos.eos.lugs.ch>  Sun, 26 Apr 2009 23:17:37 +0200
+
+rpncalc (1.36.6) unstable; urgency=medium
+
+  * updated standards version
+  * use system provided log2, pow2, pow10
+  * fix memory allocation error (closes: #439001)
+
+ -- David Frey <dfrey@debian.org>  Wed, 22 Aug 2007 00:39:46 +0200
+
+rpncalc (1.36.5-0.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Use $(CURDIR) instead of $(PWD) in debian/rules to fix FTBFS when using
+    sudo (closes: #418354).  Thanks, Steve Langasek!
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 27 May 2007 17:15:28 +0200
+
+rpncalc (1.36.5) unstable; urgency=low
+
+  * add missing Build-dependancy to ed (closes: #397314)
+    (thanks to Andreas Jochens for reporting this)
+
+ -- David Frey <david@eos.lugs.ch>  Mon,  6 Nov 2006 22:03:45 +0100
+
+rpncalc (1.36.4) unstable; urgency=low
+
+  * call "make clean" in clean target of debian/rules
+    (closes: #396323)
+
+ -- David Frey <david@eos.lugs.ch>  Sun,  5 Nov 2006 17:08:28 +0100
+
+rpncalc (1.36.3) unstable; urgency=low
+
+  * use dh_strip for stripping executable
+    (this might fix the OS/390 build).
+
+ -- David Frey <david@eos.lugs.ch>  Thu,  2 Nov 2006 00:08:40 +0100
+
+rpncalc (1.36.2) unstable; urgency=low
+
+  * Do not "install -s", in order that strip does not fail
+    (this might fix the OS/390 build).
+
+ -- David Frey <david@eos.lugs.ch>  Tue, 31 Oct 2006 23:33:50 +0100
+
+rpncalc (1.36) unstable; urgency=low
+
+  * get rid of autoconf machinery (closes: #330816)  
+  * do not explicitely link against ncurses (thanks to the checklib mail)
+  * clean up po-subdirectory (closes: #331645)
+
+ -- David Frey <david@eos.lugs.ch>  Thu, 26 Oct 2006 23:12:01 +0200
+
+rpncalc (1.35) unstable; urgency=low
+
+  * recreate aclocal.m4 (closes: Bug#195499)
+  * remove "a" prefix in packges description (closes: Bug#300035).
+    This solves the discussion whether "a" or "an" is correct.
+  * updated de.po (high german version with sharp s).
+  * Expanded build dependencies with "libreadline5-dev|libreadline-dev"
+    (closes: Bug#326301)
+  * remove PACKAGE.pot file (closes: Bug#329393)
+  * Updated FSF's address again.
+  * Update to Standard version 3.6.2.
+
+ -- David Frey <dfrey@debian.org>  Mon, 26 Sep 2005 22:21:32 +0200
+
+rpncalc (1.34) unstable; urgency=low
+
+  * added french translation. Thanks to Nicolas Bertolissio.
+  * updated version to 1.34 (it is not an NMU version) [fixes lintian warning]
+  * updated standards version [fixes lintian warning]
+  * saved changelog as UTF-8 [fixes lintian warning]
+
+ -- David Frey <david@eos.lugs.ch>  Tue, 17 Aug 2004 22:42:22 +0200
+
+rpncalc (1.33.5) unstable; urgency=low
+
+  * added updated translation for finnish (closes: Bug#227037).
+    Thanks to Antti-Juhani Kaijanaho for sending me an updated
+    finnish translation.
+  * clean config.cache and config.status by calling distclean
+  * updated setting of the version constant in configure.in
+    (now parsed out of the Debian changelog file)
+
+ -- David Frey <david@eos.lugs.ch>  Mon, 12 Jan 2004 01:25:37 +0100
+
+rpncalc (1.33.4) unstable; urgency=low
+
+  * run automake stuff by hand before uploading
+    (closes Bug#195499: rpncalc: FTBFS: Automake version mismatch)
+
+ -- David Frey <dfrey@debian.org>  Sun, 14 Sep 2003 23:05:10 +0200
+
+rpncalc (1.33.3) unstable; urgency=low
+
+  * updated aclocal.m4 (closes Bug#195499: rpncalc: FTBFS: Automake version mismatch)
+
+ -- David Frey <dfrey@debian.org>  Mon,  9 Jun 2003 22:41:56 +0200
+
+rpncalc (1.33.2) unstable; urgency=low
+
+  * Separate -I and -8 flag (closes: #190957)
+
+ -- David Frey <dfrey@debian.org>  Sun, 27 Apr 2003 17:25:59 +0200
+
+rpncalc (1.33.1) unstable; urgency=low
+
+  * Do not include file names into the completion selection, only
+    complete functions.
+
+ -- David Frey <dfrey@debian.org>  Thu, 10 Apr 2003 00:06:20 +0200
+
+rpncalc (1.32.3) unstable; urgency=low
+
+  * do not set link to /usr/doc in postinst (fixes lintian bug)
+  * update to newer automake 1.7
+
+ -- David Frey <dfrey@debian.org>  Sat, 15 Feb 2003 17:44:41 +0100
+
+rpncalc (1.32.2) unstable; urgency=low
+
+  * added m4/glibc21.m4 (closes: #159251)
+
+ -- David Frey <dfrey@debian.org>  Mon,  2 Sep 2002 21:58:13 +0200
+
+rpncalc (1.32.1) unstable; urgency=low
+
+  * applied patch from Vernon Mauery which adds binary mode input and
+    output.
+  * added Build-Depends line.
+  * change autoconfiguration to adapt to autoconf2.5 and automake.
+
+ -- David Frey <dfrey@debian.org>  Mon, 19 Aug 2002 23:26:30 +0200
+
+rpncalc (1.31.13) unstable; urgency=low
+
+  * fixed rules file to include the i18n files correctly.
+
+ -- David Frey <dfrey@debian.org>  Sun, 27 Jan 2002 20:23:51 +0100
+
+rpncalc (1.31.12) unstable; urgency=low
+
+  * updated config.guess and config.sub (closes: #129246)
+
+ -- David Frey <dfrey@debian.org>  Mon, 14 Jan 2002 22:26:27 +0100
+
+rpncalc (1.31.11) unstable; urgency=low
+
+  * excluded spanish manpage since it is included in manpages-es-extra
+    (closes: Bug #127512)
+  * updated for standard version 3.5.6
+
+ -- David Frey <dfrey@debian.org>  Sun, 13 Jan 2002 21:05:57 +0100
+
+rpncalc (1.31.10) unstable; urgency=low
+
+  * drop sunos5 support
+  * fix Bug 105596 (closes: Bug #105596)
+  * updated readline prototypes.
+
+ -- David Frey <dfrey@debian.org>  Tue, 17 Jul 2001 23:04:59 +0200
+
+rpncalc (1.31.9) unstable; urgency=low
+
+  * Updated to policy 3.5.5
+  * Updated autoconf scripts (closes: #103632)
+
+ -- David Frey <dfrey@debian.org>  Fri, 13 Jul 2001 23:37:09 +0200
+
+rpncalc (1.31.8) unstable; urgency=low
+
+  * recompile for woody.
+
+ -- David Frey <dfrey@debian.org>  Sun,  7 Jan 2001 22:43:05 +0100
+
+rpncalc (1.31.7) frozen unstable; urgency=low
+
+  * applied patch from Ben Collins to make it compile with libreadline4
+    (thanks, Ben)
+  * added `externs' where appropriate and included prototypes where needed.
+
+ -- David Frey <dfrey@debian.org>  Sun,  2 Apr 2000 18:18:08 +0200
+
+rpncalc (1.31.6) unstable; urgency=low
+
+  * show sign-on-notice only when interactive.
+
+ -- David Frey <dfrey@debian.org>  Sat,  6 Nov 1999 21:53:15 +0100
+
+rpncalc (1.31.5) unstable; urgency=low
+
+  * made package FHS compliant
+
+ -- David Frey <dfrey@debian.org>  Sun, 12 Sep 1999 22:41:35 +0200
+
+rpncalc (1.31.4) unstable; urgency=low
+
+  * new language: es.
+    Claudio S. Suárez Sánchez <csuarez@ctv.es> was so nice to translate
+    the manual page and the po-file into spanish. Thanks a lot!
+
+  * Cleaned up parser a little more.
+
+ -- David Frey <dfrey@debian.org>  Sat, 10 Jul 1999 17:52:21 +0200
+
+rpncalc (1.31.3) unstable; urgency=medium
+
+  * fixed embarassing typo in scan.l (fixes Bug#40818)
+  * Version is now correctly printed out again.
+
+ -- David Frey <dfrey@debian.org>  Tue,  6 Jul 1999 22:33:25 +0200
+
+rpncalc (1.31.2) unstable; urgency=low
+
+  * fixed bug in parsing octal/hexadecimal numbers introduced by using lex
+    and yacc.
+  * better checking for errno != 0.
+
+ -- David Frey <dfrey@debian.org>  Fri, 25 Jun 1999 23:27:44 +0200
+
+rpncalc (1.31.1) unstable; urgency=low
+
+  * added the fp and ip functions.
+  * added variables
+  * Finnish messages, thanks to Antti-Juhani Kaijanaho <ajk@debian.org>,
+    thanks!
+  * Alpha needs a manual addition of -mieee-flag in order to force IEEE-math
+    compability
+  * renamed changelog.Debian into changelog, since this is a native
+    Debian package.
+
+ -- David Frey <dfrey@debian.org>  Sat, 15 May 1999 20:42:33 +0200
+
+rpncalc (1.30-5) unstable; urgency=low
+
+  * better HP28S-compability.
+  * internationalized, uses now gettext.
+  * uses now autoconf and automake.
+  * uses now lex and yacc for cleaner implementation and extensibility.
+
+ -- David Frey <dfrey@debian.org>  Sat,  6 Mar 1999 01:20:47 +0100
+
+rpncalc (1.20-4) frozen unstable; urgency=medium
+
+  * Recompile against ncurses4.2; re-upload for Debian 2.1
+
+ -- David Frey <dfrey@debian.org>  Sat,  7 Nov 1998 20:11:45 +0100
+
+rpncalc (1.20-3) unstable; urgency=low
+
+  * Recompile against libncurses4.2
+
+ -- David Frey <dfrey@debian.org>  Sat, 31 Oct 1998 00:03:04 +0100
+
+rpncalc (1.20-2) unstable; urgency=low
+
+  * changed maintainer address to (working) Debian-Adress
+  * fixed bugs found by lintian: old FSF address and md5sums-pathnames
+    starting with `.'.
+
+ -- David Frey <dfrey@debian.org>  Tue, 10 Feb 1998 21:43:09 +0100
+
+rpncalc (1.20-1) unstable; urgency=low
+
+  * shlibs.local file deleted;
+    fixes Bug #16420 (rpncalc: spurious shlibs.local file)
+
+  * added some math functions to complete math library:
+    cbrt, log1p, exp1m, hypot, cbrt, floor, rint, fmod.
+
+  * made the whole thing autoconfiguring. This is experimental; the
+    autoconfiguring code is not complete (for speed); it assumes a
+    working ANSI-C-Compiler and a working POSIX.1 system (C-library).
+    This isn't a problem for modern Unices, though.
+
+  * re-upload with version 1.20 instead of 1.2 for dpkg-upgrade reasons
+    (1.20 is greater than 1.15, but 1.2 is not)
+
+ -- David Frey <david@eos.lugs.ch>  Sat, 10 Jan 1998 15:44:16 +0100
+
+rpncalc (1.15-5) unstable; urgency=low
+
+  * fixes Bug #16198 (rpncalc: dumps core if input begins with space)
+
+ -- David Frey <david@eos.lugs.ch>  Sat, 27 Dec 1997 19:11:40 +0100
+
+rpncalc (1.15-4) unstable; urgency=low
+
+  * changed maintainer address back to <David.Frey@eos.lugs.ch>
+  * updated to Standard 2.3.0.1
+
+ -- David Frey <david@eos.lugs.ch>  Sun, 21 Dec 1997 22:03:49 +0100
+
+rpncalc (1.15-3) unstable; urgency=low
+
+  * changes for libc6: pow10 and pow2 are gone.
+  * changed maintainer address to dFrey@debian.org
+  * added md5sums in debian/rules
+
+ -- David Frey <david@eos.lugs.ch>  Thu, 11 Sep 1997 23:06:13 +0200
+
+rpncalc (1.15-2) unstable; urgency=low
+
+  * gzipped manpage,
+  * built package with dpkg-source from dpkg-dev 1.4.0.7
+
+ -- David Frey <david@eos.lugs.ch>  Thu, 30 Jan 1997 00:33:31 +0100
+
+rpncalc (1.15-1) unstable; urgency=low
+
+  * Code cleanups; new `char' command.
+  * Experimental support for FreeBSD, SunOs 4 and SunOs 5
+    (read: I was able to compile it, but haven't tested it
+     extensively)
+  * `help' uses the command table to display it's commands
+
+ -- David Frey <david@eos.lugs.ch>  Sat, 25 Jan 1997 20:16:54 +0059
+
+rpncalc (1.1-4) unstable; urgency=low
+
+  * relinked with libc5.4-7
+
+ -- David Frey <david@eos.lugs.ch>  Sat, 9 Nov 1996 19:03:56 +0059
+
+rpncalc (1.1-3) unstable; urgency=low
+
+  * New debian changelog format; new packaging format
+
+ -- David Frey <david@eos.lugs.ch>  Sat, 14 Sep 1996 01:01:27 +0200
+
+Wed Aug 14 23:17:42 1996  David Frey  <david@eos.lugs.ch>
+
+	* Bug#4156, unexecutable /usr/man, /usr/man/man1 fixed.
+
+Sat Jul 13 19:53:43 1996  David Frey  <david@eos.lugs.ch>
+
+	* cleaned up the readline access code.
+	  You can always use readline(), regardless wether
+	  reading from terminal or from stdin (file).
+
+	* Command completion added. Modelled after the fileman.c
+	  example in the readline library.
+
+Sun Mar 17 15:20:47 1996  David Frey  <david@eos.lugs.ch>
+
+	* the rpncalc in rpncalc-1.0-3.deb was statically linked.
+	  This version is dynamically linked as it should be.
+
+Sat Mar 16 21:55:28 1996  David Frey  <david@eos.lugs.ch>
+
+	* recompiled for ELF distribution.
+
+Sun Feb 11 22:52:31 1996  David Frey  <david@eos.lugs.ch>
+
+	* revised the man page.
+
+	* corrected e-Mail-address to <David.Frey@eos.lugs.ch>.
+	  The address <David.Frey@lugs.ch> is still valid, but replies
+	  to <david@eos.lugs.ch> will get bounced.
+
+Wed Jan 24 23:08:37 1996  David Frey  <david@eos.lugs.ch>
+
+	* changed libreadline dependency in debian.control
+	  (Bug #2214 reported by E. Branderhorst <branderhorst@fgg.eur.nl>)
+
+	* fixed spelling bug in debian.control
+	  (Bug #2214 reported by E. Branderhorst <branderhorst@fgg.eur.nl>)
+  
+

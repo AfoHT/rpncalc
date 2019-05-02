@@ -1,0 +1,13 @@
+Source: rpncalc
+Build-Depends: bison, flex, gettext, libreadline5-dev | libreadline-dev, debhelper, ed
+Section: math
+Priority: optional
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Standards-Version: 3.8.1.0
+
+Package: rpncalc
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: RPN calculator trying to emulate an HP28S
+ rpncalc is a calculator similar to dc(1), but it uses the readline
+ library and shows the stack visually.

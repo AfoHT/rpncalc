@@ -1,0 +1,428 @@
+# deutsche Übersetzung für rpncalc.
+# Copyright (C) 1999, 2005 David Frey
+# David Frey <dfrey@debian.org>, 1999, 2005
+# GPL'ed
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: rpncalc 1.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-10-27 00:02+0200\n"
+"PO-Revision-Date: 1999-03-05 21:26+0100\n"
+"Last-Translator: David Frey <dfrey@debian.org>\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: cmds.c:145
+#, c-format
+msgid "defined only for arguments >= 0.\n"
+msgstr "Nur für Argumente >= 0 definiert\n"
+
+#: cmds.c:361
+#, c-format
+msgid "`%s' is a function"
+msgstr "`%s' ist eine Funktion"
+
+#: cmds.c:363
+#, c-format
+msgid "`%s' is a command"
+msgstr "`%s' ist ein Befehl"
+
+#: cmds.c:368
+#, c-format
+msgid " and takes 1 argument"
+msgstr " und verlangt 1 Argument"
+
+#: cmds.c:370
+#, c-format
+msgid " and takes %d arguments"
+msgstr " und verlangt %d Argumente"
+
+#: cmds.c:376
+#, c-format
+msgid ""
+"The following operations and constants are recognized:\n"
+"\n"
+msgstr ""
+"Folgende Operatoren und Konstanten sind bekannt:\n"
+"\n"
+
+#: cmds.c:386
+#, c-format
+msgid "Delimiters are ',', ';', space, tab, and newline.\n"
+msgstr "Gültige Trenner sind ',', ';', Leerzeichen, Tabulator, und Newline.\n"
+
+#: gram.y:141
+msgid "undefined variable"
+msgstr "nicht definierte Variable"
+
+#: gram.y:155
+#, fuzzy
+msgid "is a constant"
+msgstr "Die Eulersche Konstante"
+
+#: gram.y:164
+msgid "variable table is full"
+msgstr ""
+
+#: rpncalc.c:102
+#, fuzzy, c-format
+msgid "usage: %s [-h][-v] [\"expression\"]\n"
+msgstr "Gebrauch: %s  [-h][-v] [\"Ausdruck\"]\n"
+
+#: rpncalc.c:105
+msgid "display this help and exit"
+msgstr "zeigt diese Hilfestellung und beendet das Programm"
+
+#: rpncalc.c:106
+msgid "output version information and exit"
+msgstr "gibt die Versionsnummer aus und beendet das Programm"
+
+#: rpncalc.c:107 rpncalc.c:108
+msgid "show license information and exit"
+msgstr "zeigt die Lizenzinformation und beendet das Programm"
+
+#: rpncalc.c:163
+#, c-format
+msgid "%s version %s\n"
+msgstr "%s Version %s\n"
+
+#: rpncalc.c:203
+#, c-format
+msgid "This is free software with ABSOLUTELY NO WARRANTY.\n"
+msgstr "Dies ist Freie Software ohne JEGLICHE GARANTIE.\n"
+
+#: rpncalc.c:205
+#, c-format
+msgid "For details, type `warranty'.\n"
+msgstr "Für Details, tippen Sie bitte `warranty'.\n"
+
+#: rpncalc.c:206
+#, c-format
+msgid "Type `quit' to quit and `?' to get a summary.\n"
+msgstr ""
+"Tippen Sie `quit' um rpncalc zu beenden und `?' um Hilfe zu erhalten.\n"
+
+#: scan.l:209
+msgid "invalid hexadecimal constant"
+msgstr "ungültige Hexadezimalzahl"
+
+#: scan.l:219
+#, fuzzy
+msgid "invalid binary constant"
+msgstr "ungültige Ganzzahl"
+
+#: scan.l:229
+msgid "invalid octal constant"
+msgstr "ungültige Octalzahl"
+
+#: scan.l:236
+msgid "invalid integer constant"
+msgstr "ungültige Ganzzahl"
+
+#: scan.l:260
+msgid "undefined function or command"
+msgstr "undefinierter Befehl oder undefinierte Funktion"
+
+#: scan.l:302
+#, c-format
+msgid "%s:%s:%d: %s at '%s'\n"
+msgstr "%s:%s:%d: %s bei '%s'\n"
+
+#: stack.c:108
+#, c-format
+msgid "pop: stack empty.\n"
+msgstr "pop: leerer Stack.\n"
+
+#: stack.c:126
+#, c-format
+msgid "pick: element not available.\n"
+msgstr "pick: Element nicht verfügbar.\n"
+
+#: stack.c:144
+#, c-format
+msgid "drop: stack empty.\n"
+msgstr "drop: leerer Stack.\n"
+
+#: utils.c:57 utils.c:68
+msgid "Out of memory!"
+msgstr "Kein Speicher mehr frei!"
+
+#~ msgid "factorial"
+#~ msgstr "Fakultät"
+
+#~ msgid "xy/100"
+#~ msgstr "xy/100"
+
+#~ msgid "100(y-x)/x"
+#~ msgstr "100(y-x)/x"
+
+#~ msgid "100y/x"
+#~ msgstr "100y/x"
+
+#~ msgid "logical and"
+#~ msgstr "logisches und"
+
+#~ msgid "multiplication"
+#~ msgstr "Multiplikation"
+
+#~ msgid "addition"
+#~ msgstr "Addition"
+
+#~ msgid "subtraction"
+#~ msgstr "Subtraktion"
+
+#~ msgid "division"
+#~ msgstr "Division"
+
+#~ msgid "show all known functions and commands"
+#~ msgstr "Listet alle unterstützten Funktionen und Befehle auf"
+
+#~ msgid "exponentiation"
+#~ msgstr "Potenzierung"
+
+#~ msgid "absolute value: |x|"
+#~ msgstr "Absolutwert: |x|"
+
+#~ msgid "arc cosine"
+#~ msgstr "Arkuscosinus"
+
+#~ msgid "inverse hyperbolic cosine"
+#~ msgstr "Inverser hyperbolischer Cosinus"
+
+#~ msgid "exponentiation to the base 10: 10^x"
+#~ msgstr "Potenzierung zur Basis 10: 10^x"
+
+#~ msgid "arc tangent of 2 variables"
+#~ msgstr "Arkustangens im Koordinatensystem"
+
+#~ msgid "arc sine"
+#~ msgstr "Arkußinus"
+
+#~ msgid "inverse hyperbolic sine"
+#~ msgstr "Inverser hyperbolischer Sinus"
+
+#~ msgid "arc tangent"
+#~ msgstr "Arkustangens"
+
+#~ msgid "inverse hyperbolic tangent"
+#~ msgstr "Inverser hyperbolischer Arkustangens"
+
+#~ msgid "cube root: x^1/3"
+#~ msgstr "dritte Wurzel: x^1/3"
+
+#~ msgid "smallest integral value not leß than x"
+#~ msgstr "kleinster ganzzahliger Wert nicht kleiner als x"
+
+#~ msgid "display ASCII values"
+#~ msgstr "Zeigt ASCII Werte"
+
+#~ msgid "change sign"
+#~ msgstr "Vorzeichenwechsel"
+
+#~ msgid "clear stack"
+#~ msgstr "Löscht den Stack"
+
+#~ msgid "cosine"
+#~ msgstr "Cosinus"
+
+#~ msgid "arcus cosine"
+#~ msgstr "Arkuscosinus"
+
+#~ msgid "switch to decimal base"
+#~ msgstr "I/O auf Dezimalsystem wechseln"
+
+#~ msgid "show depth of stack"
+#~ msgstr "Stacktiefe anzeigen"
+
+#~ msgid "divide"
+#~ msgstr "Division"
+
+#~ msgid "drop last stack element"
+#~ msgstr "das letzte Element vom Stack werfen"
+
+#~ msgid "drop last 2 stack elements"
+#~ msgstr "die letzten 2 Elemente vom Stack werfen"
+
+#~ msgid "drop last n stack elements"
+#~ msgstr "die letzten n Elemente vom Stack werfen"
+
+#~ msgid "duplicate last stack element"
+#~ msgstr "Das letzte Element auf dem Stack duplizieren"
+
+#~ msgid "duplicate last 2 stack elements"
+#~ msgstr "Die letzten 2 Elemente auf dem Stack duplizieren"
+
+#~ msgid "duplicate last n stack elements"
+#~ msgstr "Die letzten n Elemente auf dem Stack duplizieren"
+
+#~ msgid "error function"
+#~ msgstr "Die Fehler-Funktion (aus der Statistik)"
+
+#~ msgid "complementary error function: 1-erf(x)"
+#~ msgstr "Die komplementäre Fehler-Funktion: 1-erf(x) (aus der Statistik)"
+
+#~ msgid "exit rpncalc"
+#~ msgstr "rpncalc beenden"
+
+#~ msgid "exponential function: e^x"
+#~ msgstr "Exponentialfunktion: e^x"
+
+#~ msgid "largest integral value not greater than x"
+#~ msgstr "Größte Ganzzahl nicht größer als x"
+
+#~ msgid "greatest common divisor"
+#~ msgstr "Größter gemeinsamer Teiler"
+
+#~ msgid "switch to hexadecimal base"
+#~ msgstr "I/O auf Hexadezimalsystem wechseln"
+
+#~ msgid "Euclidean distance function: sqrt(x^2+y^2)"
+#~ msgstr "Euklid'sche-Distanzfunktiuon: sqrt(x²+y²)"
+
+#~ msgid "inverse: 1/x"
+#~ msgstr "Kehrwert: 1/x"
+
+#~ msgid "Beßel function of zeroth order"
+#~ msgstr "Beßel-Funktion nullter Ordnung"
+
+#~ msgid "Beßel function of first order"
+#~ msgstr "Beßel-Funktion erster Ordnung"
+
+#~ msgid "Beßel function of n-th order"
+#~ msgstr "Beßel-Funktion n-ter Ordnung"
+
+#~ msgid "base-2 logarithm"
+#~ msgstr "binärer Logarithmus"
+
+#~ msgid "integer part of the base-2 logarithm"
+#~ msgstr "Ganzzahlanteil des Binärlogarithmus"
+
+#~ msgid "logarithm to the base 10"
+#~ msgstr "dekadischer Logarithmus"
+
+#~ msgid "ln|gamma(x)|"
+#~ msgstr "ln|gamma(x)|"
+
+#~ msgid "natural log"
+#~ msgstr "natürlicher Logarithmus (Basis e)"
+
+#~ msgid "largest real number"
+#~ msgstr "größte reelle Zahl"
+
+#~ msgid "smallest real number"
+#~ msgstr "kleinste, positive reelle Zahl"
+
+#~ msgid "modulo function"
+#~ msgstr "Modulo-Funktion"
+
+#~ msgid "logical not"
+#~ msgstr "logisches Nicht"
+
+#~ msgid "switch to octal base"
+#~ msgstr "I/O auf Octalsystem wechseln"
+
+#~ msgid "logical or"
+#~ msgstr "logisches (inklusives) Oder"
+
+#~ msgid "push second last element on stack"
+#~ msgstr "zweitletztes Element auf den Stack legen"
+
+#~ msgid "the constant pi"
+#~ msgstr "die Konstante pi"
+
+#~ msgid "duplicate a element from the stack"
+#~ msgstr "ein Element vom Stack duplizieren"
+
+#~ msgid "drop last element from stack"
+#~ msgstr "letztes Element vom Stack löschen"
+
+#~ msgid "set precision"
+#~ msgstr "Ausgabegenauigkeit setzen"
+
+#~ msgid "product of all elements on stack"
+#~ msgstr "Produkt aller Elemente auf dem Stack"
+
+#~ msgid "push a new element on the stack"
+#~ msgstr "Neues Element auf den Stack legen"
+
+#~ msgid "random value [0, 1["
+#~ msgstr "Zufallszahl [0, 1["
+
+#~ msgid "set seed for random value generator"
+#~ msgstr "Anfangswert für den Zufallszahlengenerator setzen"
+
+#~ msgid "round to closest integer"
+#~ msgstr "auf die nächste Ganzzahl runden"
+
+#~ msgid "roll the stack"
+#~ msgstr "den Stack ``rollen''"
+
+#~ msgid "roll the stack down"
+#~ msgstr "den Stack hinunter ``rollen''"
+
+#~ msgid "rotate the stack"
+#~ msgstr "Den Stack rotieren"
+
+#~ msgid "shift left"
+#~ msgstr "Bitshift nach links"
+
+#~ msgid "redisplay stack"
+#~ msgstr "Stack neu anzeigen"
+
+#~ msgid "shift right"
+#~ msgstr "Bitshift nach rechts"
+
+#~ msgid "sign of x"
+#~ msgstr "Vorzeichen von x"
+
+#~ msgid "sine"
+#~ msgstr "Sinus"
+
+#~ msgid "hyperbolic sine"
+#~ msgstr "hyperbolischer Sinus"
+
+#~ msgid "shift left 1 byte"
+#~ msgstr "Byteshift nach links"
+
+#~ msgid "square: x^2"
+#~ msgstr "Quadrat: x²"
+
+#~ msgid "square root"
+#~ msgstr "Quadratwurzel"
+
+#~ msgid "shift right 1 byte"
+#~ msgstr "Byteshift nach rechts"
+
+#~ msgid "sum of all elements on stack"
+#~ msgstr "Summe aller Elemente auf dem Stack"
+
+#~ msgid "swap last two elements"
+#~ msgstr "Letzte zwei Elemente auf dem Stack vertauschen"
+
+#~ msgid "tangent"
+#~ msgstr "Tangens"
+
+#~ msgid "hyperbolic tangent"
+#~ msgstr "hyperbolischer Tangens"
+
+#~ msgid "show absence of warranty"
+#~ msgstr "Lizenzbedingungen anzeigen"
+
+#~ msgid "logical xor"
+#~ msgstr "logisches exklusives Oder"
+
+#~ msgid "Beßel function of the second kind of zeroth order"
+#~ msgstr "modifizierte Beßel-Funktion nullter Ordnung"
+
+#~ msgid "Beßel function of the second kind of first order"
+#~ msgstr "modifizierte Beßel-Funktion erster Ordnung"
+
+#~ msgid "Beßel function of the second kind of n-th order"
+#~ msgstr "modifizierte Beßel-Funktion n-ter Ordnung"
+
+#~ msgid "%cinfinity"
+#~ msgstr "%cunendlich"

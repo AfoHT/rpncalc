@@ -1,0 +1,428 @@
+# Template-File for translations.
+# Copyright (C) 1999 David Frey
+# David Frey <dfrey@debian.org>, 1999
+# GPL'ed
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: rpncalc 1.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-10-27 00:02+0200\n"
+"PO-Revision-Date: 1999-03-05 21:26+0100\n"
+"Last-Translator: Claudio S. Suárez Sánchez <csuarez@ctv.es>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: cmds.c:145
+#, c-format
+msgid "defined only for arguments >= 0.\n"
+msgstr "definido sólo para argumentos >= 0.\n"
+
+#: cmds.c:361
+#, c-format
+msgid "`%s' is a function"
+msgstr "`%s' es una función"
+
+#: cmds.c:363
+#, c-format
+msgid "`%s' is a command"
+msgstr "`%s' es un comando"
+
+#: cmds.c:368
+#, c-format
+msgid " and takes 1 argument"
+msgstr " y debe tener 1 argumento"
+
+#: cmds.c:370
+#, c-format
+msgid " and takes %d arguments"
+msgstr " y tiene %d argumentos"
+
+#: cmds.c:376
+#, c-format
+msgid ""
+"The following operations and constants are recognized:\n"
+"\n"
+msgstr ""
+"Se reconocen las siguientes operaciones y constantes:\n"
+"\n"
+
+#: cmds.c:386
+#, c-format
+msgid "Delimiters are ',', ';', space, tab, and newline.\n"
+msgstr ""
+"Los delimitadores son ',', ';', espacio, tabulador y el caracter de cambio "
+"de línea.\n"
+
+#: gram.y:141
+msgid "undefined variable"
+msgstr "variable sin definir"
+
+#: gram.y:155
+msgid "is a constant"
+msgstr "es una constante"
+
+#: gram.y:164
+msgid "variable table is full"
+msgstr "la tabla de variables está llena"
+
+#: rpncalc.c:102
+#, c-format
+msgid "usage: %s [-h][-v] [\"expression\"]\n"
+msgstr "Modo de empleo: %s [-h][-v] [\\\"expresión\\\"]\n"
+
+#: rpncalc.c:105
+msgid "display this help and exit"
+msgstr "escribe esta ayuda y finaliza"
+
+#: rpncalc.c:106
+msgid "output version information and exit"
+msgstr "escribe información sobre la versión y acaba"
+
+#: rpncalc.c:107 rpncalc.c:108
+msgid "show license information and exit"
+msgstr "muestra información sobre la licencia y acaba"
+
+#: rpncalc.c:163
+#, c-format
+msgid "%s version %s\n"
+msgstr "%s versión %s\n"
+
+#: rpncalc.c:203
+#, c-format
+msgid "This is free software with ABSOLUTELY NO WARRANTY.\n"
+msgstr "Este software es libre y viene ABSOLUTAMENTE SIN GARANTÍA.\n"
+
+#: rpncalc.c:205
+#, c-format
+msgid "For details, type `warranty'.\n"
+msgstr "Para más detalles, escriba `warranty'.\n"
+
+#: rpncalc.c:206
+#, c-format
+msgid "Type `quit' to quit and `?' to get a summary.\n"
+msgstr "Escriba `quit' para acabar y `?' para un sumario.\n"
+
+#: scan.l:209
+msgid "invalid hexadecimal constant"
+msgstr "constante hexadecial no válida"
+
+#: scan.l:219
+#, fuzzy
+msgid "invalid binary constant"
+msgstr "constante entera no válida"
+
+#: scan.l:229
+msgid "invalid octal constant"
+msgstr "constante octal no válida"
+
+#: scan.l:236
+msgid "invalid integer constant"
+msgstr "constante entera no válida"
+
+#: scan.l:260
+msgid "undefined function or command"
+msgstr "función o orden no definida"
+
+#: scan.l:302
+#, c-format
+msgid "%s:%s:%d: %s at '%s'\n"
+msgstr "%s:%s:%d: %s en '%s'\n"
+
+#: stack.c:108
+#, c-format
+msgid "pop: stack empty.\n"
+msgstr "pop: pila vacía.\n"
+
+#: stack.c:126
+#, c-format
+msgid "pick: element not available.\n"
+msgstr "pick: no existe el elemento.\n"
+
+#: stack.c:144
+#, c-format
+msgid "drop: stack empty.\n"
+msgstr "drop: pila vacía.\n"
+
+#: utils.c:57 utils.c:68
+msgid "Out of memory!"
+msgstr "¡ Memoria agotada!"
+
+#~ msgid "factorial"
+#~ msgstr "factorial"
+
+#~ msgid "xy/100"
+#~ msgstr "xy/100"
+
+#~ msgid "100(y-x)/x"
+#~ msgstr "100(y-x)/x"
+
+#~ msgid "100y/x"
+#~ msgstr "100y/x"
+
+#~ msgid "logical and"
+#~ msgstr "y lógico"
+
+#~ msgid "multiplication"
+#~ msgstr "multiplicación"
+
+#~ msgid "addition"
+#~ msgstr "suma"
+
+#~ msgid "subtraction"
+#~ msgstr "resta"
+
+#~ msgid "division"
+#~ msgstr "división"
+
+#~ msgid "show all known functions and commands"
+#~ msgstr "muestra todas las funciones y comandos conocidos"
+
+#~ msgid "exponentiation"
+#~ msgstr "exponenciación"
+
+#~ msgid "absolute value: |x|"
+#~ msgstr "valor absoluto: |x|"
+
+#~ msgid "arc cosine"
+#~ msgstr "arc coseno"
+
+#~ msgid "inverse hyperbolic cosine"
+#~ msgstr "coseno hiperbólico inverso"
+
+#~ msgid "exponentiation to the base 10: 10^x"
+#~ msgstr "exponenciación en base 10: 10^x"
+
+#~ msgid "arc tangent of 2 variables"
+#~ msgstr "arc tangente tiene dos variables"
+
+#~ msgid "arc sine"
+#~ msgstr "arc seno"
+
+#~ msgid "inverse hyperbolic sine"
+#~ msgstr "seno hiperbólico inverso"
+
+#~ msgid "arc tangent"
+#~ msgstr "arc tangente"
+
+#~ msgid "inverse hyperbolic tangent"
+#~ msgstr "tangente hiperbólica inversa"
+
+#~ msgid "cube root: x^1/3"
+#~ msgstr "raíz cúbica: x^1/3"
+
+#~ msgid "smallest integral value not less than x"
+#~ msgstr "el entero más pequeño no menor que x"
+
+#~ msgid "display ASCII values"
+#~ msgstr "muestra valores ASCII"
+
+#~ msgid "change sign"
+#~ msgstr "cambia el signo"
+
+#~ msgid "clear stack"
+#~ msgstr "limpia la pila"
+
+#~ msgid "cosine"
+#~ msgstr "coseno"
+
+#~ msgid "arcus cosine"
+#~ msgstr "arco coseno"
+
+#~ msgid "switch to decimal base"
+#~ msgstr "pasa a base decimal"
+
+#~ msgid "show depth of stack"
+#~ msgstr "muestra el tamaño de la pila"
+
+#~ msgid "divide"
+#~ msgstr "divide"
+
+#~ msgid "drop last stack element"
+#~ msgstr "elimina el último elemento de la pila"
+
+#~ msgid "drop last 2 stack elements"
+#~ msgstr "elimina los 2 últimos elementos"
+
+#~ msgid "drop last n stack elements"
+#~ msgstr "elimina los últimos n elementos de la pila"
+
+#~ msgid "duplicate last stack element"
+#~ msgstr "duplica el último elemento de la pila"
+
+#~ msgid "duplicate last 2 stack elements"
+#~ msgstr "duplica los 2 últimos elementos de la pila"
+
+#~ msgid "duplicate last n stack elements"
+#~ msgstr "duplica los n últimos elementos de la pila"
+
+#~ msgid "Euler's constant"
+#~ msgstr "constante de Euler"
+
+#~ msgid "error function"
+#~ msgstr "función error"
+
+#~ msgid "complementary error function: 1-erf(x)"
+#~ msgstr "complementario de la función error: 1-erf(x)"
+
+#~ msgid "exit rpncalc"
+#~ msgstr "salir de rpncalc"
+
+#~ msgid "exponential function: e^x"
+#~ msgstr "función exponencial: e^x"
+
+#~ msgid "largest integral value not greater than x"
+#~ msgstr "el mayor entero no mayor que x"
+
+#~ msgid "greatest common divisor"
+#~ msgstr "máximo común divisor"
+
+#~ msgid "switch to hexadecimal base"
+#~ msgstr "pasa a base hexadecimal"
+
+#~ msgid "Euclidean distance function: sqrt(x^2+y^2)"
+#~ msgstr "función de distancia euclídea: sqrt(x^2+y^2)"
+
+#~ msgid "inverse: 1/x"
+#~ msgstr "inverso: 1/x"
+
+#~ msgid "Bessel function of zeroth order"
+#~ msgstr "función de Bessel de orden cero"
+
+#~ msgid "Bessel function of first order"
+#~ msgstr "función de Bessel de primer orden"
+
+#~ msgid "Bessel function of n-th order"
+#~ msgstr "función de Bessel de orden n"
+
+#~ msgid "base-2 logarithm"
+#~ msgstr "logaritmo en base 2"
+
+#~ msgid "integer part of the base-2 logarithm"
+#~ msgstr "parte entera del logaritmo en base 2"
+
+#~ msgid "logarithm to the base 10"
+#~ msgstr "logaritmo en base 10"
+
+#~ msgid "ln|gamma(x)|"
+#~ msgstr "ln|gamma(x)|"
+
+#~ msgid "natural log"
+#~ msgstr "logaritmo natural"
+
+#~ msgid "largest real number"
+#~ msgstr "el número real mayor"
+
+#~ msgid "smallest real number"
+#~ msgstr "el número real menor"
+
+#~ msgid "modulo function"
+#~ msgstr "función módulo"
+
+#~ msgid "logical not"
+#~ msgstr "no lógico"
+
+#~ msgid "switch to octal base"
+#~ msgstr "pasa a base octal"
+
+#~ msgid "logical or"
+#~ msgstr "o lógico"
+
+#~ msgid "push second last element on stack"
+#~ msgstr "pone penúltimo elemento en la pila"
+
+#~ msgid "the constant pi"
+#~ msgstr "la constante pi"
+
+#~ msgid "duplicate a element from the stack"
+#~ msgstr "duplica un elemento de la pila"
+
+#~ msgid "drop last element from stack"
+#~ msgstr "elimina el último elemento de la pila"
+
+#~ msgid "set precision"
+#~ msgstr "establece la precisión"
+
+#~ msgid "product of all elements on stack"
+#~ msgstr "producto de todos los elemetos de la pila"
+
+#~ msgid "push a new element on the stack"
+#~ msgstr "pone un elemento nuevo en la pila"
+
+#~ msgid "random value [0, 1["
+#~ msgstr "valor aleatorio entre [0, 1["
+
+#~ msgid "set seed for random value generator"
+#~ msgstr "establece semilla para el generador de números aleatorios"
+
+#~ msgid "round to closest integer"
+#~ msgstr "redondea hasta el entero más próximo"
+
+#~ msgid "roll the stack"
+#~ msgstr "enrolla la pila hacia arriba"
+
+#~ msgid "roll the stack down"
+#~ msgstr "enrolla la pila hacia abajo"
+
+#~ msgid "rotate the stack"
+#~ msgstr "rota la pila"
+
+#~ msgid "shift left"
+#~ msgstr "desplaza a la izquierda"
+
+#~ msgid "redisplay stack"
+#~ msgstr "vuelve a mostrar la pila"
+
+#~ msgid "shift right"
+#~ msgstr "desplaza a la derecha"
+
+#~ msgid "sign of x"
+#~ msgstr "signo de x"
+
+#~ msgid "sine"
+#~ msgstr "seno"
+
+#~ msgid "hyperbolic sine"
+#~ msgstr "seno hiperbólico"
+
+#~ msgid "shift left 1 byte"
+#~ msgstr "desplaza a la izquierda 1 byte"
+
+#~ msgid "square: x^2"
+#~ msgstr "cuadrado: x^2"
+
+#~ msgid "square root"
+#~ msgstr "raíz cuadrada"
+
+#~ msgid "shift right 1 byte"
+#~ msgstr "desplaza a la derecha 1 byte"
+
+#~ msgid "sum of all elements on stack"
+#~ msgstr "suma todos los elementos de la pila"
+
+#~ msgid "swap last two elements"
+#~ msgstr "intercambia los dos últimos elementos"
+
+#~ msgid "tangent"
+#~ msgstr "tangente"
+
+#~ msgid "hyperbolic tangent"
+#~ msgstr "tangente hiperbólica"
+
+#~ msgid "show absence of warranty"
+#~ msgstr "detalla la ausencia de garantía"
+
+#~ msgid "logical xor"
+#~ msgstr "xor lógico"
+
+#~ msgid "Bessel function of the second kind of zeroth order"
+#~ msgstr "función de Bessel de segundo tipo de orden cero"
+
+#~ msgid "Bessel function of the second kind of first order"
+#~ msgstr "función de Bessel de segundo tipo de primer orden"
+
+#~ msgid "Bessel function of the second kind of n-th order"
+#~ msgstr "función de Bessel de segundo tipo de orden n"

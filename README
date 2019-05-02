@@ -1,0 +1,4 @@
+rpncalc needs the following to successfully compile:
+
+1. a working ANSI-C compiler (e.g. gcc)
+2. a working POSIX.1, better yet, a XPG/4-compliant environment (e.g. glibc)

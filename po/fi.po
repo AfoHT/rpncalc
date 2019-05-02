@@ -1,0 +1,148 @@
+# Translation Template-File for rpncalc.
+# Copyright (C) 1999 David Frey
+# David Frey <dfrey@debian.org>, 1999
+# GPL'ed
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rpncalc 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-10-27 00:02+0200\n"
+"PO-Revision-Date: 2004-01-10 10:54+0200\n"
+"Last-Translator: Antti-Juhani Kaijanaho <ajk@debian.org>\n"
+"Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: cmds.c:145
+#, c-format
+msgid "defined only for arguments >= 0.\n"
+msgstr "määritelty vain argumenteille >= 0.\n"
+
+#: cmds.c:361
+#, c-format
+msgid "`%s' is a function"
+msgstr "'%s' on funktio"
+
+#: cmds.c:363
+#, c-format
+msgid "`%s' is a command"
+msgstr "'%s' on komento"
+
+#: cmds.c:368
+#, c-format
+msgid " and takes 1 argument"
+msgstr " ja ottaa yhden argumentin"
+
+#: cmds.c:370
+#, c-format
+msgid " and takes %d arguments"
+msgstr " ja ottaa %d argumenttia"
+
+#: cmds.c:376
+#, c-format
+msgid ""
+"The following operations and constants are recognized:\n"
+"\n"
+msgstr ""
+"Seuraavat operaatiot ja vakiot tunnetaan:\n"
+"\n"
+
+#: cmds.c:386
+#, c-format
+msgid "Delimiters are ',', ';', space, tab, and newline.\n"
+msgstr "Erottimia ovat ',', ';', välilyönti, sarkain ja rivinvaihto.\n"
+
+#: gram.y:141
+msgid "undefined variable"
+msgstr "määrittelemätön muuttuja"
+
+#: gram.y:155
+msgid "is a constant"
+msgstr "on vakio"
+
+#: gram.y:164
+msgid "variable table is full"
+msgstr "muuttujataulu on täynnä"
+
+#: rpncalc.c:102
+#, c-format
+msgid "usage: %s [-h][-v] [\"expression\"]\n"
+msgstr "käyttö: %s [-h] [-v] [\"lauseke\"]\n"
+
+#: rpncalc.c:105
+msgid "display this help and exit"
+msgstr "näytä tämä avuste ja lopeta"
+
+#: rpncalc.c:106
+msgid "output version information and exit"
+msgstr "tulosta versiotiedot ja lopeta"
+
+#: rpncalc.c:107 rpncalc.c:108
+msgid "show license information and exit"
+msgstr "näytä lisenssitiedot ja lopeta"
+
+#: rpncalc.c:163
+#, c-format
+msgid "%s version %s\n"
+msgstr "%s versio %s\n"
+
+#: rpncalc.c:203
+#, c-format
+msgid "This is free software with ABSOLUTELY NO WARRANTY.\n"
+msgstr "Tämä on vapaa ohjelma ILMAN MINKÄÄNLAISTA TAKUUTA.\n"
+
+#: rpncalc.c:205
+#, c-format
+msgid "For details, type `warranty'.\n"
+msgstr "Lisätietoa saat kirjoittamalla 'warranty'.\n"
+
+#: rpncalc.c:206
+#, c-format
+msgid "Type `quit' to quit and `?' to get a summary.\n"
+msgstr "Kirjoita 'quit' lopettaaksesi.  Kirjoittamalla '?' saat yhteenvedon.\n"
+
+#: scan.l:209
+msgid "invalid hexadecimal constant"
+msgstr "huono heksadesimaalilukuvakio"
+
+#: scan.l:219
+msgid "invalid binary constant"
+msgstr "huono binäärilukuvakio"
+
+#: scan.l:229
+msgid "invalid octal constant"
+msgstr "huono oktaalilukuvakio"
+
+#: scan.l:236
+msgid "invalid integer constant"
+msgstr "huono kokonaislukuvakio"
+
+#: scan.l:260
+msgid "undefined function or command"
+msgstr "määrittelemätön funktio tai komento"
+
+#: scan.l:302
+#, c-format
+msgid "%s:%s:%d: %s at '%s'\n"
+msgstr "%s:%s:%d: %s  kohdassa '%s'\n"
+
+#: stack.c:108
+#, c-format
+msgid "pop: stack empty.\n"
+msgstr "pop: pino on tyhjä.\n"
+
+#: stack.c:126
+#, c-format
+msgid "pick: element not available.\n"
+msgstr "pick: alkiota ei ole saatavilla.\n"
+
+#: stack.c:144
+#, c-format
+msgid "drop: stack empty.\n"
+msgstr "drop: pino on tyhjä.\n"
+
+#: utils.c:57 utils.c:68
+msgid "Out of memory!"
+msgstr "Muisti loppu!"

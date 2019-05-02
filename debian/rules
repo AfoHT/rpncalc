@@ -1,0 +1,68 @@
+#!/usr/bin/make -f
+#                                                            -*- Makefile -*-
+#
+# This rules file was adapted from the
+#   Sample debian.rules file - for GNU Hello (1.3).
+#   Copyright 1994,1995 by Ian Jackson.
+#   I hereby give you perpetual unlimited permission to copy,
+#   modify and relicense this file, provided that you do not remove
+#   my name from the file itself.  (I assert my moral right of
+#   paternity under the Copyright, Designs and Patents Act 1988.)
+#   This file may have to be extensively modified
+
+# The name of the package (for example, `emacs').
+package	:= $(shell sed -n -e 's/Package: *\([a-z]\)/\1/p' debian/control)
+
+tmp	:= $(CURDIR)/debian/tmp
+
+prefix	:= usr
+bin	:= $(prefix)/bin
+doc	:= $(prefix)/share/doc/$(package)
+manroot := $(prefix)/share/man
+locale	:= $(prefix)/share/locale/
+man	:= $(manroot)/man1
+
+ifneq (,$(findstring debug,$(DEB_BUILD_OPTIONS)))
+CFLAGS += -g
+endif
+
+build:
+	$(MAKE) && touch build
+
+clean:
+	$(MAKE) clean
+	-rm -f build
+	-rm -rf *~ $(tmp) debian/*~ debian/files debian/substvars
+
+binary-indep:	build
+# There are no architecture-independent files.
+# If there were any they would be made here.
+
+binary-arch:	build
+	-rm -rf $(tmp)
+	mkdir $(tmp) $(tmp)/$(prefix) $(tmp)/$(bin)
+	cd $(tmp) && install -d $(doc) $(manroot) $(locale)
+	$(MAKE) DESTDIR=$(tmp) install
+	dh_strip $(tmp)/$(bin)/$(package)
+	cp debian/changelog $(tmp)/$(doc)/changelog
+	gzip -9f $(tmp)/$(doc)/changelog
+	gzip -9  $(tmp)/$(man)/$(package).1 \
+	         $(tmp)/$(manroot)/*/man1/$(package).1
+	rm -rf $(tmp)/$(manroot)/es
+	cp debian/copyright $(tmp)/$(doc)
+	dpkg-shlibdeps $(package)
+	install -d $(tmp)/DEBIAN
+	cd debian && install -m 755 prerm tmp/DEBIAN
+	dpkg-gencontrol -isp
+	chown -R root.root $(tmp)
+	chmod -R g-ws,go=rX $(tmp)
+	dpkg --build $(tmp) ..
+	chmod a+r debian/files debian/substvars
+
+# Below here is fairly generic really
+binary:		binary-indep binary-arch
+
+source diff:
+	@echo >&2 'source and diff are obsolete - use dpkg-source -b'; false
+
+.PHONY: binary binary-arch binary-indep clean
