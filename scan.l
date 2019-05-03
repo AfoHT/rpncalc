@@ -84,7 +84,7 @@ const struct cmd cmdtab[] =
   { "abs"     , 1, 1, fabs     , "absolute value: |x|"                     },
   { "acos"    , 1, 1, acos     , "arc cosine"                              },
   { "acosh"   , 1, 1, acosh    , "inverse hyperbolic cosine"               },
-  { "alog"    , 1, 1, pow10    , "exponentiation to the base 10: 10^x"     },
+  { "alog"    , 1, 1, exp10    , "exponentiation to the base 10: 10^x"     },
   { "and"     , 2, 1, and      , "logical and"                             },
   { "arg"     , 2, 1, atan2    , "arc tangent of 2 variables"              },
   { "asin"    , 1, 1, asin     , "arc sine"                                },

@@ -41,8 +41,7 @@
 
 double rnd(void);
 
-double pow2(double y);
-double pow10(double y);
+double exp10(double y);
 double chs(double f);
 double sign(double f);
 double sqr(double f);

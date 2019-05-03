@@ -1,3 +1,10 @@
+rpncalc (1.36.9) unstable; urgency=low
+
+  * Remove pow2 and pow10, replace with system provided exp10 for glibc 2.27
+    compatibility
+
+ -- Henrik Tjäder <henrik@tjaders.com>  Thu, 03 May 2019 19:14:05 +0200
+
 rpncalc (1.36.8) unstable; urgency=low
 
   * Upload with correct e-Mail address. 

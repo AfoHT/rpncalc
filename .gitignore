@@ -10,3 +10,7 @@ y.tab.h
 # Editor specifics
 *.swp
 tags
+
+# Buildfiles
+*.o
+rpncalc
