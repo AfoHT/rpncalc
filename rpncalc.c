@@ -70,6 +70,7 @@
 #include "stack.h"
 #include "utils.h"
 
+size_t noofvars;
 void initialize_readline(int interactive);
 
 extern char *command_generator (const char *text, int state);

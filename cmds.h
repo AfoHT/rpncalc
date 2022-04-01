@@ -1,3 +1,6 @@
+#ifndef CMDS_H
+#define CMDS_H
+
 /************************************************************************
  * cmds.h -- part of rpncalc.c						*
  *									*
@@ -36,7 +39,6 @@
  * Initial revision
  *
  */
-
 #include <math.h>
 
 double rnd(void);
@@ -103,10 +105,11 @@ struct var {
   int   isconst;
 };
 
-const size_t noofconst;
+extern const size_t noofconst;
 
-size_t noofvars;
-const size_t maxnoofvars;
+extern size_t noofvars;
+
+extern const size_t maxnoofvars;
 
 double help(struct cmd *f);
 double warranty(void);
@@ -114,3 +117,5 @@ double quit(void);
 
 int cmdcmp(const void *f1, const void *f2);
 int varcmp(const void *f1, const void *f2);
+
+#endif

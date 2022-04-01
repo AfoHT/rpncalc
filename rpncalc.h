@@ -1,3 +1,6 @@
+#ifndef RPNCALC_H
+#define RPNCALC_H
+
 /************************************************************************
  * rpncalc.h								*
  *									*
@@ -28,6 +31,9 @@
  * push/pops, unfortunately.
  * */
 
-char *command_generator(char *text, int state);
-char **rpncalc_completion(char *text, int start, int end);
+
+char *command_generator(const char *text, int state);
+char **rpncalc_completion(const char *text, int start, int end);
 void initialize_readline(int interactive);
+
+#endif
